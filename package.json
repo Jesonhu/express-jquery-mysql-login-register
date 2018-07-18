@@ -1,0 +1,24 @@
+{
+  "name": "express_jquery_mysq_login_register",
+  "version": "1.0.0",
+  "description": "express + mysql + jquery 实现的登录注册",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0",
+    "server": "node ./server"
+  },
+  "author": "Jesonhu",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "cz-conventional-changelog": "^2.1.0",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
