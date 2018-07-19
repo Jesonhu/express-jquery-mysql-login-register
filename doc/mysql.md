@@ -3,7 +3,7 @@
 + 创建数据库 `node_demo`
 + 创建 `node_demo` `user` 表
 ```mysql
-CREATE TABLE `node`.`user`(
+CREATE TABLE `node_demo`.`user`(
        `id`     INT(11)  NOT NULL AUTO_INCREMENT,
        `username` varchar(64)   NOT NULL ,
         `password` varchar(64) NOT NULL ,

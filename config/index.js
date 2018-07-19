@@ -4,7 +4,7 @@
 const MYSQL_CONFIG = {
   host: 'localhost',
   user: 'root',
-  password: 'root',
+  password: '',
   database: 'node_demo',
   port: '3306'
 }
