@@ -6,6 +6,7 @@
 + 前端
   + [注册页面功能](./client/login.html)
   + [登录页面功能](./client/register.html)
+  + [layer-移动端](./doc/layer.md)
 
 + 后端
   + [mysql相关](./doc/mysql.md)

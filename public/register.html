@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>注册</title>
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/register.css">
 </head>
+
 <body>
-  <div class="p-regist">
-    <h2>注册</h2>
-    <form action="">
-      <div class="input-box">
-        <input type="text" name="name" placeholder="请输入姓名" id="name-input"><br>
-        <input type="email" name="email" placeholder="请输入邮箱" id="email-input"><br>
-        <input type="password" name="password" placeholder="请输入密码" id="password-input">
+  <div class="p-regist container">
+    <h2 class="text-center">注册</h2>
+    <div class="row">
+      <div class="regist-main">
+        <form action="" class="form-register form-horizontal">
+          <!-- 用户名 start -->
+          <div class="form-group">
+            <label for="name-input" class="col-sm-2 control-label">姓名</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="name-input" placeholder="请输入姓名">
+            </div>
+          </div>
+          <!-- 用户名 end -->
+
+          <!-- 邮箱 start -->
+          <div class="form-group">
+            <label for="email-input" class="col-sm-2 control-label">邮箱</label>
+            <div class="col-sm-10">
+                <input type="email" name="email" placeholder="请输入邮箱" id="email-input" class="form-control" required>
+            </div>
+          </div>
+          <!-- 邮箱 end -->
+
+          <!-- 密码 start -->
+          <div class="form-group">
+            <label for="password-input" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+              <input type="password" name="password" placeholder="请输入密码" id="password-input" class="form-control" required>
+            </div>
+          </div>
+          <!-- 密码 end -->
+        </form>
+
+        <div class="option-wrap">
+          <button id="regiser-btn" class="btn btn-lg btn-primary btn-block">注册</button>
+          <a href="./login.html" id="login-guide" style="display:none" class="btn btn-lg btn-success btn-block">登录</a>
+        </div>
       </div>
-    </form>
-    <button id="regiser-btn">注册</button>
-    <a href="./login.html" id="login-guide" style="display:none">登录</a>
+    </div>
   </div>
 
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="./lib/layer/mobile/layer.js"></script>
   <script src="./script/register.js"></script>
 </body>
+
 </html>
